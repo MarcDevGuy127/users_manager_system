@@ -1,6 +1,7 @@
 <?php
 
 // Database parameters
+$servername = "localhost"; 
 $username = "root";          
 $password = "";                
 $dbname = "users_manager";  
