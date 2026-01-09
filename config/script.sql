@@ -1,0 +1,20 @@
+CREATE DATABASE users_manager;
+USE users_manager;
+
+CREATE TABLE users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(12) NOT NULL,
+    age TINYINT UNSIGNED NOT NULL CHECK (age BETWEEN 0 AND 120),
+    user_password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE admins (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(12) NOT NULL,
+    age TINYINT UNSIGNED NOT NULL CHECK (age BETWEEN 0 AND 120),
+    admin_password VARCHAR(255) NOT NULL
+);
