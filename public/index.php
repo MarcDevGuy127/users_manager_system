@@ -1,10 +1,20 @@
 <?php
+/*  
+$route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$route = trim($route, '/') ?: 'home';
+$route = basename($route);
+*/
 $route = $_GET['url'] ?? 'home';
 
-$file = "../pages/{$route}.html";
+$page = "../pages/{$route}.html";
 
-if (file_exists($file)) {
-    include $file;
+$header = "../layouts/header.html";
+$footer = "../layouts/footer.html";
+
+if (file_exists($page)) {
+    include $header;
+    include $page;
+    include $footer;
 } else {
     http_response_code(404);
     echo "Page not found!";

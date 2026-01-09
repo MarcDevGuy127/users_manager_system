@@ -1,0 +1,17 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: rgba(245, 245, 245, 0.795);
+}
+
+header {
+    background: blue;
+    color: aliceblue;
+}
+
+footer {
+    background: blueviolet;
+    color: aliceblue;
+}
