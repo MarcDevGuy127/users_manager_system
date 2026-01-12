@@ -2,9 +2,9 @@
 
 // defining consts for reference database info
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'users_manager');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'SistemaWebCRUD');
+define('DB_USER', 'sa');
+define('DB_PASS', 'Passw0rd');
 
 // trying connection with database, using the defined consts
 try {
